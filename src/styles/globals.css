@@ -1,0 +1,28 @@
+:root {
+  --font-sans: system-ui, -apple-system, sans-serif;
+
+  --color-bg: #f5f7fa;
+  --color-text: #1f2937;
+
+  --color-accent: #2563eb;
+  --color-accent-contrast: white;
+
+  --radius-md: 12px;
+  --space-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+button {
+  font: inherit;
+  color: var(--color-text);
+}

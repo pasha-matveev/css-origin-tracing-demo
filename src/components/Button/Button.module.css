@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  background: var(--card-accent);
+  color: var(--color-accent-contrast);
+
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
