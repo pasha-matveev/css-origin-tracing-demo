@@ -2,8 +2,6 @@
 
 This repository contains a small frontend project built with **Vite** and **React** that demonstrates how authored CSS is transformed into the final CSS served to the browser. It contains a simple UI with a `Card` component and a `Button` component, each with their own CSS modules, as well as global styles.
 
----
-
 ## Setup and Run Instructions
 
 ### 1. Clone the repository
@@ -39,7 +37,6 @@ npm run build
 
 This generates the production build in the `dist/` directory, including the compiled CSS and source maps.
 
----
 ## CSS Transformation Overview
 
 1. **Authored CSS**  
@@ -58,4 +55,7 @@ This generates the production build in the `dist/` directory, including the comp
 
 4. **Vite Bundling**  
    Vite collects CSS from all modules, applies the transformations above, and bundles it into generated CSS files. It also generates source maps that link the final CSS back to the original authored CSS.
-   
+
+## Investigation Report
+
+See `report/devtools-investigation.md` for the full report.
