@@ -1,16 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import cssSourcemap from "vite-plugin-css-sourcemap";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 5173,
-  },
-  css: {
-    devSourcemap: true,
-  },
-  build: {
-    sourcemap: true,
-  },
+  plugins: [react(), cssSourcemap()],
+  css: { devSourcemap: true },
+  build: { sourcemap: true, minify: false },
 });

@@ -53,8 +53,12 @@ This generates the production build in the `dist/` directory, including the comp
    - `postcss-nesting` expands nested rules into standard flat selectors
    - `autoprefixer` adds vendor-prefixed properties based on target browser support
 
+   (Note: In this demo, the CSS is simple and did not trigger autoprefixer transformations)
+
 4. **Vite Bundling**  
    Vite collects CSS from all modules, applies the transformations above, and bundles it into generated CSS files. It also generates source maps that link the final CSS back to the original authored CSS.
+
+   (Note: `vite-plugin-css-sourcemap` was added to ensure that CSS source maps are generated during the build, allowing DevTools to trace styles from the bundled CSS back to the original authored source files)
 
 ## Investigation Report
 
